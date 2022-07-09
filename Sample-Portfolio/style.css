@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+/* body {
+  overflow-x: hidden;
+} */
+.landing {
+  background-color: rgba(26, 40, 61, 0.87);
+  min-height: 100vh;
+}
+.arrow {
+  transition: 0.2s ease-in;
+}
+.content a:hover .arrow {
+  transform: translateX(10px);
+}
+.active {
+  color: white;
+}
+.social-icons ul {
+  list-style: none;
+  display: flex;
+  justify-content: left;
+  padding: 0;
+}
+.social-icons ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 0 2px;
+  margin: auto 8px 0 0;
+  font-size: 1.3em;
+}
+.social-icons ul li a:hover {
+  color: yellow;
+}
+
+.name {
+  color: beige;
+  font-size: 60px;
+  line-height: 1.2em;
+  letter-spacing: 5px;
+}
+.name-underline {
+  width: 25%;
+  padding: 2px 0;
+  background-color: rgb(255, 255, 0);
+}
+.content a {
+  text-decoration: none;
+  color: yellow;
+  letter-spacing: 1.8px;
+  text-align: justify;
+}
+.content a i {
+  font-size: 0.8em;
+}
+.qual {
+  background-color: rgba(26, 40, 61, 0.87);
+  /* background-color: rgba(22, 34, 51, 0.87); */
+  min-height: 100vh;
+}
+.qual-1 {
+  background-color: rgba(22, 34, 51, 0.87);
+  min-height: 90vh;
+}
+.qual-col {
+  display: flex;
+  flex-direction: start;
+}
+.qual-col p {
+  height: fit-content;
+  margin: 1em 1em;
+  font-size: 0.9em;
+}
+.qual-2 {
+  background-color: transparent;
+  font-size: 30px;
+}
+.box-container {
+  transform: translateY(-50%);
+}
+.box {
+  display: flex;
+  justify-content: center;
+  min-height: 30vh;
+}
+.box-1 {
+  background: rgb(172, 172, 4) !important;
+}
+.box-content {
+  background-color: rgb(36, 56, 83);
+  text-align: center;
+  padding: 30% 0px;
+  font-size: 20px;
+  width: 100%;
+}
+.box-content i {
+  font-size: 1.9rem;
+}
+a {
+  text-decoration: none;
+}
+.projects {
+  background: rgba(26, 40, 61, 0.87);
+  min-height: 100vh;
+}
+.project {
+  display: relative;
+}
+.project-content {
+  text-align: center;
+  text-decoration: none !important;
+  position: relative;
+}
+.project-content img {
+  width: 100%;
+}
+.project-content p {
+  padding: 10px 0;
+  color: white;
+}
+/* 
+.project {
+  position: relative;
+  margin: 1em;
+}
+
+.project::before,
+.project::after {
+  content: "";
+  position: absolute;
+  top: 1.25em;
+  bottom: 1.25em;
+  left: 1.25em;
+  right: 1.25em;
+  opacity: 1;
+  transition: transform ease-out 250ms;
+}
+
+.project::before {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  transform: scale(0, 1);
+}
+
+.project::after {
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  transform: scale(1, 0);
+}
+
+.project:hover::before {
+  transform: scale(1.05, 1);
+}
+
+.project:hover::after {
+  transform: scale(1, 1.05);
+}
+
+.project-content img {
+  width: 100%;
+  display: block;
+  transition: opacity ease-out 250ms;
+}
+
+.project:hover img {
+  opacity: 0.4;
+}
+
+.project-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  opacity: 0;
+  transition: opacity ease-out 250ms;
+}
+
+.project:hover .project-content {
+  opacity: 1;
+}
+
+.project-content p {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 0;
+} */
+@media screen and (max-width: 768px) {
+  .qual-1 {
+    min-height: 100vh;
+  }
+}
+@media screen and (max-width: 576px) {
+  .qual-1 {
+    min-height: 105vh;
+  }
+  .box {
+    height: 10vh !important;
+  }
+  .box-content {
+    background-color: rgb(36, 56, 83);
+    text-align: center;
+    padding: 55% 0px;
+    font-size: 20px;
+    width: 100%;
+  }
+  .box-content i {
+    font-size: 1.9rem;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  .qual1 {
+    height: max-content;
+  }
+  .qual-2 {
+    background-color: transparent;
+    font-size: 30px;
+    margin-top: 10vh;
+  }
+  .box-container {
+    transform: translateY(-20%);
+  }
+  .box {
+    display: flex;
+    justify-content: center;
+    min-height: 20vh;
+  }
+  .box-content {
+    background-color: rgb(36, 56, 83);
+    text-align: center;
+    padding: 20% 10%;
+    font-size: 15px;
+    width: 100%;
+  }
+  .box-content i {
+    font-size: 1.5rem;
+  }
+  .qual-col {
+    width: 100%;
+  }
+}
